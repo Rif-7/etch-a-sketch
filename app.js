@@ -11,9 +11,6 @@ function resetGrid() {
     })
 }
 
-
-
-
 function makeGrid(gridSize) {
     if (gridSize > 100 || isNaN(gridSize)) {
         alert("Max Grid Size is 100");
@@ -43,12 +40,9 @@ function makeGrid(gridSize) {
 let resizeBtn = document.querySelector(".resize");
 
 resizeBtn.addEventListener("click", () => {
-
     const newSize = document.querySelector(".slider").value;
     makeGrid(Number(newSize));
     return;
 })
-
-
 
 makeGrid(currentSize);
