@@ -10,17 +10,9 @@ h1 {
     margin-bottom: 0;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    align-items: center;
-}
-
 .resize-div {
     display: flex;
     flex-direction: row;
-    
 }
 
 .container {
