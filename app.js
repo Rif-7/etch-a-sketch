@@ -1,4 +1,4 @@
-let currentSize = 30;
+let currentSize = 16;
 
 function onHover(e) {
     e.target.classList.add("grid-hover");
