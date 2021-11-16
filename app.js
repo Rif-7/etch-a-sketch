@@ -1,3 +1,5 @@
+let currentSize = 30;
+
 function onHover(e) {
     e.target.classList.add("grid-hover");
 }
@@ -37,4 +39,16 @@ function makeGrid(gridSize) {
     }    
 }
 
-makeGrid(30);
+
+let resizeBtn = document.querySelector(".resize");
+
+resizeBtn.addEventListener("click", () => {
+
+    const newSize = document.querySelector(".slider").value;
+    makeGrid(Number(newSize));
+    return;
+})
+
+
+
+makeGrid(currentSize);
